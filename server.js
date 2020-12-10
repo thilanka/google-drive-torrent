@@ -392,7 +392,7 @@ const addTorrentForUser = (torrent, user, callback) => {
 
             // Attach boolean to file (hack!), by default all files are selected
             for (var i = 0; i < torrent.files.length; i++) {
-                torrent.files[i].selected = true;
+                torrent.files[i].selected = false;
             }
             callback(null, torrent);
         });
